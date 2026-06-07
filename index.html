@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhi Mane | Personal Portfolio</title>
+    <meta name="description" content="Personal portfolio website of Siddhi Mane, B.Tech ETC student, Versatile Tech Professional, and Cybersecurity & AI enthusiast.">
+    
+    <!-- Google Fonts: Poppins (for body) & Syne (for headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Preloader Screen -->
+    <div id="preloader" class="preloader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <h1 class="loader-name">SIDDHI MANE</h1>
+            <p class="loader-subtitle">Loading Portfolio Experience...</p>
+            <div class="loader-progress-bar">
+                <div class="loader-progress" id="load-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Dark Animated Particles Background -->
+    <canvas id="particles-canvas" class="background-canvas"></canvas>
+
+    <!-- 3. Custom Futuristic Cursor Glow -->
+    <div id="custom-cursor" class="custom-cursor" aria-hidden="true"></div>
+    <div id="custom-cursor-glow" class="custom-cursor-glow" aria-hidden="true"></div>
+
+    <!-- 4. Top Scroll Progress Indicator -->
+    <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+    <!-- 5. Floating Music Toggle Button -->
+    <div class="music-controller" id="music-controller">
+        <!-- Floating music waves -->
+        <div class="music-waves" aria-hidden="true">
+            <span class="wave wave-1"></span>
+            <span class="wave wave-2"></span>
+            <span class="wave wave-3"></span>
+        </div>
+        <button id="music-btn" class="music-btn" aria-label="Toggle Background Music">
+            <div class="vinyl-disc">
+                <div class="vinyl-grooves"></div>
+                <div class="vinyl-center"></div>
+            </div>
+            <i class="fa-solid fa-music music-icon"></i>
+        </button>
+        <span class="music-tooltip">Play Background Music ✨</span>
+        <!-- Soft Popup invitation -->
+        <div class="music-invite" id="music-invite">
+            <p>Click to experience the portfolio with music ✨</p>
+            <button id="close-invite" class="close-invite" aria-label="Dismiss invitation"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+
+    <!-- 6. Floating Glass Navbar -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-s">S</span>IDDHI<span class="logo-dot">.</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-right">
+                <a href="#contact" class="nav-cta">Let's Connect</a>
+                <button class="nav-toggle-btn" id="nav-toggle" aria-label="Toggle Menu">
+                    <span class="bar-line"></span>
+                    <span class="bar-line"></span>
+                    <span class="bar-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section section-reveal">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-glow">B.Tech E&TC '28</div>
+                    <h1 class="hero-title">
+                        Hi, I am <br>
+                        <span class="text-gradient">Siddhi Mane</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Versatile Tech Professional & <br>
+                        <span id="typed-text" class="typed-text"></span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Electronics & Telecommunication Engineering student passionate about building secure, smart, and intelligent technology solutions. Exploring the boundaries of Cybersecurity, AI, and Full-Stack Systems.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn-primary">
+                            <span>Get In Touch</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#certifications" class="btn-secondary">
+                            <span>View Certifications</span>
+                        </a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <span class="social-title">Follow My Journey</span>
+                        <div class="social-buttons">
+                            <a href="https://linkedin.com/in/siddhi-mane-5a9762316" target="_blank" class="social-btn" aria-label="LinkedIn Profile">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <span class="btn-glow"></span>
+                            </a>
+                            <a href="mailto:siddhimane6320@gmail.com" class="social-btn" aria-label="Email Address">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span class="btn-glow"></span>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub Profile (Placeholder)">
+                                <i class="fa-brands fa-github"></i>
+                                <span class="btn-glow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="profile-image-container">
+                        <div class="glow-ring glow-ring-purple"></div>
+                        <div class="glow-ring glow-ring-silver"></div>
+                        <div class="image-wrapper">
+                            <img src="assets/profile.png" alt="Siddhi Mane Profile" class="profile-img">
+                        </div>
+                        <div class="floating-badge badge-cyber">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>CyberSec</span>
+                        </div>
+                        <div class="floating-badge badge-ai">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>AI & ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-down" aria-label="Scroll to About Section">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="label">Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about-section section-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">My Technical Journey</h2>
+                    <div class="title-divider"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text-content">
+                        <p class="lead-bio">
+                            "Siddhi Mane is a passionate Electronics & Telecommunication Engineering student with strong interests in Artificial Intelligence, Cybersecurity, Full Stack Development, Data Analytics, and emerging technologies."
+                        </p>
+                        <p class="body-bio">
+                            She actively participates in technical events, leadership activities, academic competitions, and professional certifications. Her journey reflects dedication, consistency, leadership, and continuous learning. Bridging the gap between hardware systems and cognitive cloud applications, she aims to develop robust products that solve real-world problems.
+                        </p>
+                        
+                        <div class="focus-cards-grid">
+                            <div class="focus-card">
+                                <i class="fa-solid fa-laptop-code card-icon"></i>
+                                <h3>Full Stack & AI</h3>
+                                <p>Building web frontends integrated with intelligent machine intelligence models.</p>
+                            </div>
+                            <div class="focus-card">
+                                <i class="fa-solid fa-user-shield card-icon"></i>
+                                <h3>Cybersecurity</h3>
+                                <p>Securing networks, analyzing threat vectors, and managing cloud identity access.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats-container">
+                        <div class="stats-glass-card">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="16">0</span><span class="stat-plus">+</span>
+                                <p class="stat-label">Certifications</p>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="18">0</span><span class="stat-plus">+</span>
+                                <p class="stat-label">Achievements</p>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="9" data-decimals="2" data-exact="9.45">0</span><span class="stat-plus"></span>
+                                <p class="stat-label">Academic CGPA</p>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="2028">0</span>
+                                <p class="stat-label">Graduation Year</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills-section section-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Capabilities</span>
+                    <h2 class="section-title">Skills & Expertises</h2>
+                    <div class="title-divider"></div>
+                </div>
+                
+                <div class="skills-categories">
+                    <div class="skills-column">
+                        <h3 class="category-header"><i class="fa-solid fa-code"></i> Programming & Software</h3>
+                        <div class="skills-grid" id="programming-skills">
+                            <!-- Skill: C Programming -->
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">C Programming</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 0%" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill: C++ -->
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">C++</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 0%" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill: Python -->
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 0%" data-progress="92%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill: Full Stack Development -->
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Full Stack Development</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 0%" data-progress="80%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill: Microsoft Excel -->
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Microsoft Excel</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 0%" data-progress="88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-column">
+                        <h3 class="category-header"><i class="fa-solid fa-microchip"></i> Emerging Tech & Cloud</h3>
+                        <div class="skills-grid" id="tech-skills">
+                            <!-- Skill: Artificial Intelligence -->
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Artificial Intelligence</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 0%" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill: Cybersecurity -->
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Cybersecurity</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 0%" data-progress="88%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill: Data Analytics -->
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Data Analytics</span>
+                                    <span class="skill-percentage">84%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 0%" data-progress="84%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill: Computer Vision -->
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Computer Vision</span>
+                                    <span class="skill-percentage">78%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 0%" data-progress="78%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill: AWS -->
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">AWS</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 0%" data-progress="80%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill: Google Cloud Platform -->
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Google Cloud Platform</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 0%" data-progress="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-column full-width-col">
+                        <h3 class="category-header"><i class="fa-solid fa-users"></i> Leadership & Professional</h3>
+                        <div class="skills-grid horizontal-skills" id="leadership-skills">
+                            <!-- Skill: Leadership -->
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Leadership</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 0%" data-progress="95%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill: Communication -->
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Communication</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 0%" data-progress="92%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill: Public Speaking -->
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Public Speaking</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 0%" data-progress="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS SECTION -->
+        <section id="certifications" class="certifications-section section-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Credentials</span>
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="title-divider"></div>
+                </div>
+                
+                <!-- Filter Controls -->
+                <div class="filter-controls" role="tablist">
+                    <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+                    <button class="filter-tab" data-filter="cybersecurity" role="tab" aria-selected="false">Cybersecurity</button>
+                    <button class="filter-tab" data-filter="development" role="tab" aria-selected="false">Programming</button>
+                    <button class="filter-tab" data-filter="data-analytics" role="tab" aria-selected="false">Data Analytics</button>
+                    <button class="filter-tab" data-filter="cloud" role="tab" aria-selected="false">Cloud Architecture</button>
+                    <button class="filter-tab" data-filter="hardware-science" role="tab" aria-selected="false">Electronics & AI</button>
+                    <button class="filter-tab" data-filter="soft-skills" role="tab" aria-selected="false">Professional Skills</button>
+                </div>
+                
+                <!-- Dynamic Grid -->
+                <div class="certifications-grid-wrapper">
+                    <div class="grid-loading" id="certs-loader">
+                        <div class="spinner"></div>
+                        <p>Fetching certificates...</p>
+                    </div>
+                    <div class="certifications-grid" id="certifications-grid" style="display: none;">
+                        <!-- Injected dynamically via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS SECTION -->
+        <section id="achievements" class="achievements-section section-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Milestones</span>
+                    <h2 class="section-title">Honor & Achievements</h2>
+                    <div class="title-divider"></div>
+                </div>
+                
+                <div class="timeline-container">
+                    <div class="timeline-line">
+                        <div class="timeline-progress" id="timeline-progress"></div>
+                    </div>
+                    
+                    <div class="grid-loading" id="achievements-loader">
+                        <div class="spinner"></div>
+                        <p>Recreating timeline...</p>
+                    </div>
+                    
+                    <div class="timeline-items" id="timeline-items" style="display: none;">
+                        <!-- Timeline items injected dynamically via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section section-reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Reach Out</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-divider"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Contact Info Card -->
+                    <div class="contact-info-card glass-card">
+                        <h3>Contact Information</h3>
+                        <p class="contact-subtitle">Have a question or want to work together? Let's stay in touch!</p>
+                        
+                        <div class="info-list">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="info-content">
+                                    <span>Email Me</span>
+                                    <a href="mailto:siddhimane6320@gmail.com">siddhimane6320@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div class="info-content">
+                                    <span>Connect on LinkedIn</span>
+                                    <a href="https://linkedin.com/in/siddhi-mane-5a9762316" target="_blank">linkedin.com/in/siddhi-mane-5a9762316</a>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="info-content">
+                                    <span>Location</span>
+                                    <p>AMGOI, Kolhapur, Maharashtra, India</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-footer-badge">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Electronics & Telecommunication Engineering Class of 2028</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card glass-card">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Since this is a static site, this is a demonstration. I will get back to you soon!'); this.reset();">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" required placeholder="john@example.com">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" required placeholder="Inquiry about projects / collaboration">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" required rows="5" placeholder="Write your message here..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary full-width">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a href="#home" class="logo">
+                    <span class="logo-s">S</span>IDDHI<span class="logo-dot">.</span>
+                </a>
+                <p class="footer-desc">
+                    Designing futuristic interfaces, developing secure telecommunications logic, and crafting smart AI applications.
+                </p>
+            </div>
+            
+            <div class="footer-right">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container bottom-container">
+                <p class="copyright">&copy; 2026 Siddhi Mane. All rights reserved.</p>
+                <div class="bottom-socials">
+                    <a href="https://linkedin.com/in/siddhi-mane-5a9762316" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:siddhimane6320@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 7. Premium Interactive Lightbox Modal -->
+    <!-- MANDATORY: Use closedby="any" to enable light-dismiss behavior -->
+    <dialog id="lightbox-modal" class="lightbox-modal" closedby="any" aria-labelledby="modal-title">
+        <div class="modal-container">
+            <!-- Close Button inside the dialog -->
+            <button class="modal-close-btn" id="modal-close" aria-label="Close dialog">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="modal-grid">
+                <div class="modal-visual-side">
+                    <!-- Dynamic Media Content Loader -->
+                    <div id="modal-media-container" class="modal-media-container">
+                        <!-- Loaded via JS (e.g. image slider, pdf viewer, or SVG placeholder) -->
+                    </div>
+                </div>
+                
+                <div class="modal-info-side">
+                    <span class="modal-tag" id="modal-tag">Category</span>
+                    <h2 class="modal-title" id="modal-title">Modal Item Title</h2>
+                    <p class="modal-meta" id="modal-meta"><i class="fa-solid fa-calendar"></i> Date | Issuer</p>
+                    
+                    <div class="modal-body">
+                        <p class="modal-desc" id="modal-desc">Detailed explanation of the credential or achievement milestone.</p>
+                        
+                        <div class="modal-extra-section" id="modal-extra-section">
+                            <!-- Injected details (like skills tags list, or download buttons) -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Custom Background Music Player Element (Using desi_kalakar.mp3) -->
+    <audio id="bg-audio" loop preload="auto">
+        <source src="assets/music/desi_kalakar.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

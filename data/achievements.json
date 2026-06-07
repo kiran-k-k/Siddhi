@@ -1,0 +1,153 @@
+[
+  {
+    "id": 1,
+    "title": "Google Digital Campus 3.0 Representative",
+    "description": "Represented AMGOI in the Google Digital Campus 3.0 initiative, fostering tech learning and digital campus resources.",
+    "date": "Nov 2024",
+    "category": "Leadership / Technology",
+    "image": null
+  },
+  {
+    "id": 2,
+    "title": "Fusion 2K26 Academic Topper Award",
+    "description": "Received the Academic Topper Award for the academic year 2024–25, recognizing outstanding performance in the E&TC engineering program.",
+    "date": "Feb 2026",
+    "category": "Academic Excellence",
+    "image": "achievements/fusion_2k26_academic_topper.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "Internshala Student Partner (ISP)",
+    "description": "Selected as an Internshala Student Partner. Led outreach initiatives, developed core leadership and networking capabilities, and connected students to careers.",
+    "date": "Jun 2025",
+    "category": "Leadership",
+    "image": "certificates/internshala_student_partner.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "Internship & Job Preparation Course Completion",
+    "description": "Completed professional training designed to enhance job interview skills, resume building, and professional development.",
+    "date": "Jul 2025",
+    "category": "Professional Development",
+    "image": "certificates/internship_job_prep_course.png"
+  },
+  {
+    "id": 5,
+    "title": "Programming in Python with AI",
+    "description": "Completed advanced AI and Python training, mastering practical script development and AI integration concepts.",
+    "date": "Oct 2025",
+    "category": "AI / Programming",
+    "image": "certificates/programming_python_ai.png"
+  },
+  {
+    "id": 6,
+    "title": "Project Based Learning Day – 2nd Prize",
+    "description": "Secured the 2nd Prize in the Project Based Learning Day 2025–2026, presenting innovative technical projects and applications.",
+    "date": "Mar 2026",
+    "category": "Innovation / Teamwork",
+    "image": [
+      "achievements/project_based_learning_1.jpeg",
+      "achievements/project_based_learning_2.jpeg"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Academic Topper & Activity Coordinator",
+    "description": "Recognized as Academic Topper and Activity Coordinator in the E&TC Department, leading department activities and academic groups.",
+    "date": "May 2025",
+    "category": "Leadership / Academics",
+    "image": "achievements/felicitation_ceremony.jpeg"
+  },
+  {
+    "id": 8,
+    "title": "Fusion 2K25 Achievements",
+    "description": "Received the Special Achievement Award and secured the Runner-Up spot in Chess, demonstrating strategic problem-solving skills.",
+    "date": "Mar 2025",
+    "category": "Sports / Excellence",
+    "image": "achievements/special_achievement_award.jpeg"
+  },
+  {
+    "id": 9,
+    "title": "IMPETUS 2K24 – Conclave Competition",
+    "description": "Secured the 2nd Prize in the Conclave Competition at IMPETUS 2K24, demonstrating public speaking and technical logic capabilities.",
+    "date": "Oct 2024",
+    "category": "Communication Skills",
+    "image": "achievements/impetus_2k24_conclave.jpeg"
+  },
+  {
+    "id": 10,
+    "title": "Flip the Classroom Session",
+    "description": "Conducted an engaging 'Flip the Classroom' teaching session on Digital Electronics, explaining complex digital circuit concepts to peers.",
+    "date": "Sep 2024",
+    "category": "Teaching / Leadership",
+    "image": "achievements/flip_the_classroom.jpeg"
+  },
+  {
+    "id": 11,
+    "title": "IEEE Membership Achievement",
+    "description": "Officially joined the IEEE organization, the world's leading professional association for advancing technology for humanity.",
+    "date": "Jan 2025",
+    "category": "Professional Membership",
+    "image": "certificates/ieee_membership_announcement.jpeg"
+  },
+  {
+    "id": 12,
+    "title": "The Deccan Dialogue International Summit",
+    "description": "Participated in the international innovation and dialogue summit, exchanging ideas and collaborating directly with Japanese delegates.",
+    "date": "Dec 2024",
+    "category": "International Exposure",
+    "image": [
+      "achievements/deccan_dialogue_1.jpeg",
+      "achievements/deccan_dialogue_2.jpeg",
+      "achievements/deccan_dialogue_3.jpeg"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Smart India Hackathon 2025 Shortlisted Team",
+    "description": "Shortlisted for the national level Smart India Hackathon 2025 as a key member of the technical team 'InnoRover'.",
+    "date": "Sep 2025",
+    "category": "Hackathon / Innovation",
+    "image": null
+  },
+  {
+    "id": 14,
+    "title": "Tech Fest 2K24 – Group Discussion Winner",
+    "description": "Won First Prize in the Group Discussion Competition at Tech Fest 2K24, showing articulation, fast reasoning, and team-discussion leadership.",
+    "date": "Sep 2024",
+    "category": "Communication",
+    "image": "achievements/group_discussion_winner.jpeg"
+  },
+  {
+    "id": 15,
+    "title": "Miss Fresher 2K24",
+    "description": "Honored with the Miss Fresher 2K24 title, highlighting outstanding confidence, interview response, and personality.",
+    "date": "Oct 2024",
+    "category": "Personality / Achievement",
+    "image": "achievements/miss_fresher.jpeg"
+  },
+  {
+    "id": 16,
+    "title": "C Programming Basics Certification Achievement",
+    "description": "Completed the C Programming Basics course, building a solid foundation in procedural programming, memory management, and pointers.",
+    "date": "Jul 2025",
+    "category": "Technical Skills",
+    "image": "certificates/c_programming_basics.png"
+  },
+  {
+    "id": 17,
+    "title": "Tata Cybersecurity Analyst Simulation",
+    "description": "Completed the Tata Cybersecurity Analyst job simulation via Forage, gaining experience in IAM, threat vectors, and data security.",
+    "date": "Feb 2025",
+    "category": "Cybersecurity",
+    "image": "certificates/tata_cybersecurity_analyst.pdf"
+  },
+  {
+    "id": 18,
+    "title": "AWS APAC Solutions Architecture Simulation",
+    "description": "Completed the AWS Solutions Architecture job simulation on Forage, architecting highly available, secure, and scalable cloud systems.",
+    "date": "Feb 2025",
+    "category": "Cloud Computing",
+    "image": "certificates/solutions_architecture_job_simulation.jpeg"
+  }
+]

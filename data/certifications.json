@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "title": "Ethical Hacking Fundamentals",
+    "issuer": "WsCube Tech",
+    "issued": "Dec 2025",
+    "skills": ["Ethical Hacking Fundamentals", "Cybersecurity", "Network Security"],
+    "category": "cybersecurity",
+    "image": "certificates/ethical_hacking_fundamentals.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "Semiconductors - Electronic Devices & Circuits",
+    "issuer": "Infosys Springboard",
+    "issued": "Nov 2025",
+    "skills": ["Electronics", "Semiconductors", "Circuit Design"],
+    "category": "hardware-science",
+    "image": "certificates/semiconductors_electronic_devices_circuits.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "Soft Skills - Soft Skills Training Courses",
+    "issuer": "Infosys Springboard",
+    "issued": "Jun 2025",
+    "skills": ["Soft Skills", "Professional Communication", "Interpersonal Skills"],
+    "category": "soft-skills",
+    "image": "certificates/soft_skills_training_courses.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "C++ Programming Beginner",
+    "issuer": "Infosys Springboard",
+    "issued": "Jun 2025",
+    "skills": ["C++", "OOP", "Basic Programming"],
+    "category": "development",
+    "image": "certificates/cpp_programming_beginner.jpeg"
+  },
+  {
+    "id": 5,
+    "title": "Computer Vision: AI & Computer Vision",
+    "issuer": "Infosys Springboard",
+    "issued": "Dec 2024",
+    "skills": ["Computer Vision", "AI", "Image Processing"],
+    "category": "hardware-science",
+    "image": "certificates/computer_vision_ai.jpeg"
+  },
+  {
+    "id": 6,
+    "title": "AI for Students: Build Your Own Generative AI Model",
+    "issuer": "NxtWave",
+    "issued": "Nov 2024",
+    "skills": ["Generative AI", "AI Models", "Prompt Engineering"],
+    "category": "hardware-science",
+    "image": null
+  },
+  {
+    "id": 7,
+    "title": "Data Analytics using Excel",
+    "issuer": "Newton School",
+    "issued": "May 2025",
+    "skills": ["Data Analytics", "Microsoft Excel", "Spreadsheets"],
+    "category": "data-analytics",
+    "image": "certificates/data_analytics_using_excel.jpeg"
+  },
+  {
+    "id": 8,
+    "title": "Human Resource Skills Workshop",
+    "issuer": "Tareeqa Global Solution Pvt. Ltd.",
+    "issued": "Jul 2025",
+    "skills": ["Human Resources", "HR Management", "Leadership"],
+    "category": "soft-skills",
+    "image": "certificates/hr_skills_workshop.jpeg"
+  },
+  {
+    "id": 9,
+    "title": "Programming in Python with AI",
+    "issuer": "Internshala Trainings",
+    "issued": "Oct 2025",
+    "skills": ["Python", "AI", "Machine Learning Fundamentals"],
+    "category": "development",
+    "image": "certificates/programming_python_ai.png"
+  },
+  {
+    "id": 10,
+    "title": "Webinar : Full Stack Development 2026",
+    "issuer": "HCL GUVI",
+    "issued": "Jan 2026",
+    "skills": ["Full-Stack Development", "Web Technologies", "HTML/CSS/JS"],
+    "category": "development",
+    "image": "certificates/webinar_full_stack_development_2026.jpeg"
+  },
+  {
+    "id": 11,
+    "title": "Data Analytics Job Simulation",
+    "issuer": "Deloitte",
+    "issued": "Dec 2025",
+    "skills": ["Statistical Data Analysis", "Data Analytics", "Business Intelligence"],
+    "category": "data-analytics",
+    "image": "certificates/data_analytics_job_simulation.jpeg"
+  },
+  {
+    "id": 12,
+    "title": "Common Internship Test",
+    "issuer": "Internship Studio",
+    "issued": "Jan 2025",
+    "skills": ["Internship Test", "Aptitude", "Problem Solving"],
+    "category": "soft-skills",
+    "image": "certificates/common_internship_test.jpeg"
+  },
+  {
+    "id": 13,
+    "title": "Excel for Beginners",
+    "issuer": "Great Learning",
+    "issued": "Dec 2024",
+    "skills": ["Microsoft Excel", "Data Cleaning", "Formulas"],
+    "category": "data-analytics",
+    "image": "certificates/excel_for_beginners.jpeg"
+  },
+  {
+    "id": 14,
+    "title": "C Programming Basics",
+    "issuer": "Simplilearn",
+    "issued": "Jul 2025",
+    "skills": ["C Programming", "Data Structures", "Basics"],
+    "category": "development",
+    "image": "certificates/c_programming_basics.png"
+  },
+  {
+    "id": 15,
+    "title": "Tata Group - Cybersecurity Analyst Job Simulation",
+    "issuer": "Forage",
+    "issued": "Feb 2025",
+    "skills": ["AWS", "Cybersecurity", "IAM Concepts", "Access Control"],
+    "category": "cybersecurity",
+    "image": "certificates/tata_cybersecurity_analyst.pdf"
+  },
+  {
+    "id": 16,
+    "title": "AWS APAC - Solutions Architecture Job Simulation",
+    "issuer": "Forage",
+    "issued": "Feb 2025",
+    "skills": ["AWS", "Cloud Architecture", "System Design"],
+    "category": "cloud",
+    "image": "certificates/solutions_architecture_job_simulation.jpeg"
+  }
+]
