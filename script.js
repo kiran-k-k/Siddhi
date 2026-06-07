@@ -676,8 +676,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }, {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px' // Trigger slightly before scrolling deep
+            threshold: 0.02,
+            rootMargin: '0px 0px -30px 0px' // Safe for small screens/tall sections
         });
 
         sections.forEach(section => {
