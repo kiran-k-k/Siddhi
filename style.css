@@ -43,6 +43,7 @@ html {
     scrollbar-width: thin;
     scrollbar-color: var(--accent-purple) var(--bg-matte);
     -webkit-text-size-adjust: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll on mobile */
 }
 
 body {
@@ -51,7 +52,8 @@ body {
     font-family: var(--font-body);
     font-weight: 400;
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+    width: 100%;
 }
 
 /* Scrollbar styling for Webkit */
@@ -2231,10 +2233,14 @@ section {
         padding: 7rem 2.5rem;
         z-index: 999;
         display: block;
+        visibility: hidden; /* Prevent iOS Safari off-screen layout overflow stretch */
+        overflow-y: auto; /* Enable scroll if links exceed screen height */
+        transition: var(--transition-smooth);
     }
     
     .nav-menu.active {
         right: 0;
+        visibility: visible;
     }
     
     .nav-list {
